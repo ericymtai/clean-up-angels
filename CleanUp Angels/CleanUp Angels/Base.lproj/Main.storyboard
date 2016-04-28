@@ -272,6 +272,10 @@
                                 <rect key="frame" x="195" y="178" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="ZNM-jO-ZfC">
+                                <rect key="frame" x="195" y="178" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="37%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2mC-c3-Iyn">
                                 <rect key="frame" x="201" y="145" width="43" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -279,7 +283,18 @@
                                 <color key="textColor" red="0.1931469894" green="0.30406271070000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="85%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jBm-Oe-xfH">
+                                <rect key="frame" x="201" y="145" width="43" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.1931469894" green="0.30406271070000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="buL-ut-dpD">
+                                <rect key="frame" x="195" y="302" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="tAJ-iW-fea">
                                 <rect key="frame" x="195" y="302" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </switch>
@@ -301,7 +316,18 @@
                                 <color key="textColor" red="0.1931469894" green="0.30406271070000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="43%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f2Z-Z8-EMp">
+                                <rect key="frame" x="201" y="394" width="43" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.1931469894" green="0.30406271070000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garbage_1.jpg" id="bJW-8M-3Yr">
+                                <rect key="frame" x="52" y="127" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garbage-_4.jpg" id="jqL-JQ-C31">
                                 <rect key="frame" x="52" y="127" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -309,15 +335,34 @@
                                 <rect key="frame" x="52" y="251" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garbage_5.jpg" id="Pk1-VJ-p5l">
+                                <rect key="frame" x="52" y="251" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garbage-_3.jpg" id="1cC-B6-2Uz">
                                 <rect key="frame" x="52" y="376" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Qrn-L5-inW">
-                                <rect key="frame" x="35" y="466" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garbage_6.jpg" id="wKW-1w-zJ7">
+                                <rect key="frame" x="52" y="376" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="more.jpg" id="Qrn-L5-inW">
+                                <rect key="frame" x="119" y="497" width="62" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.2812536316" blue="0.32046204480000001" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="61%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SPQ-B2-3TM">
+                                <rect key="frame" x="201" y="270" width="43" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.1931469894" green="0.30406271070000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="MDS-Lq-JKj">
+                                <rect key="frame" x="195" y="427" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="0.93636480460000004" green="1" blue="0.9996390114" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -329,10 +374,19 @@
                         <outlet property="VoteSwitchGroup1" destination="Mou-jl-quK" id="kSE-Zq-wJ3"/>
                         <outlet property="VoteSwitchGroup2" destination="buL-ut-dpD" id="g8E-Pp-ra8"/>
                         <outlet property="VoteSwitchGroup3" destination="rBj-L4-ori" id="0lU-pL-7DN"/>
+                        <outlet property="VoteSwitchGroup4" destination="ZNM-jO-ZfC" id="eZc-J1-gqF"/>
+                        <outlet property="VoteSwitchGroup5" destination="tAJ-iW-fea" id="KfU-vO-Ny3"/>
+                        <outlet property="VoteSwitchGroup6" destination="MDS-Lq-JKj" id="eTF-xc-4Wd"/>
                         <outlet property="changeButton" destination="Qrn-L5-inW" id="vhA-p8-LOG"/>
+                        <outlet property="voteLabelGroup4" destination="jBm-Oe-xfH" id="isY-dr-ZSR"/>
+                        <outlet property="voteLabelGroup5" destination="SPQ-B2-3TM" id="sTE-5c-vGh"/>
+                        <outlet property="voteLabelGroup6" destination="f2Z-Z8-EMp" id="hVt-Hb-cwd"/>
                         <outlet property="votePicGroup1" destination="bJW-8M-3Yr" id="zHc-1d-Xv7"/>
                         <outlet property="votePicGroup2" destination="e3A-ZN-bf6" id="qP0-Oe-tmP"/>
                         <outlet property="votePicGroup3" destination="1cC-B6-2Uz" id="Me2-wk-LU3"/>
+                        <outlet property="votePicGroup4" destination="jqL-JQ-C31" id="2Pl-QR-7Y0"/>
+                        <outlet property="votePicGroup5" destination="Pk1-VJ-p5l" id="j7X-6P-InG"/>
+                        <outlet property="votePicGroup6" destination="wKW-1w-zJ7" id="g92-Za-ie2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Egh-dn-6yW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -366,9 +420,13 @@
     <resources>
         <image name="complain_btn.jpg" width="295" height="100"/>
         <image name="garbage-_3.jpg" width="110" height="110"/>
+        <image name="garbage-_4.jpg" width="159" height="159"/>
         <image name="garbage_1.jpg" width="110" height="110"/>
         <image name="garbage_2.jpg" width="110" height="110"/>
+        <image name="garbage_5.jpg" width="159" height="159"/>
+        <image name="garbage_6.jpg" width="159" height="159"/>
         <image name="join_btn.jpg" width="294" height="99"/>
+        <image name="more.jpg" width="138" height="41"/>
         <image name="schedule_btn.jpg" width="294" height="99"/>
         <image name="submit_btn.jpg" width="199" height="60"/>
         <image name="take_btn.jpg" width="138" height="41"/>

@@ -13,84 +13,109 @@ class VoteViewController: UIViewController {
     @IBOutlet weak var votePicGroup1: UIImageView!
     @IBOutlet weak var votePicGroup2: UIImageView!
     @IBOutlet weak var votePicGroup3: UIImageView!
+    @IBOutlet weak var votePicGroup4: UIImageView!
+    @IBOutlet weak var votePicGroup5: UIImageView!
+    @IBOutlet weak var votePicGroup6: UIImageView!
     
     @IBOutlet weak var VoteLabelGroup1: UILabel!
     @IBOutlet weak var VoteLabelGroup2: UILabel!
     @IBOutlet weak var VoteLabelGroup3: UILabel!
+    @IBOutlet weak var voteLabelGroup4: UILabel!
+    @IBOutlet weak var voteLabelGroup5: UILabel!
+    @IBOutlet weak var voteLabelGroup6: UILabel!
     
     @IBOutlet weak var VoteSwitchGroup1: UISwitch!
     @IBOutlet weak var VoteSwitchGroup2: UISwitch!
     @IBOutlet weak var VoteSwitchGroup3: UISwitch!
+    @IBOutlet weak var VoteSwitchGroup4: UISwitch!
+    @IBOutlet weak var VoteSwitchGroup5: UISwitch!
+    @IBOutlet weak var VoteSwitchGroup6: UISwitch!
+
     
     @IBOutlet weak var changeButton: UIImageView!
     
     var imgsArray:[UIImageView] = []
+    
+    var imgsArray2:[UIImageView] = []
 
     var labelArray:[UILabel] = []
     
+    var labelArray2:[UILabel] = []
+    
     var switchArray:[UISwitch] = []
+    
+    var switchArray2:[UISwitch] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         imgsArray = [votePicGroup1, votePicGroup2, votePicGroup3]
         
+        imgsArray2 = [votePicGroup4, votePicGroup5, votePicGroup6]
+        
         labelArray = [VoteLabelGroup1, VoteLabelGroup2, VoteLabelGroup3]
         
+        labelArray2 = [voteLabelGroup4, voteLabelGroup5, voteLabelGroup6]
+        
         switchArray = [VoteSwitchGroup1, VoteSwitchGroup2, VoteSwitchGroup3]
-//        
-//        votePicGroup1.layer.opacity = 0.0
-//        VoteLabelGroup1.layer.opacity = 0.0
-//        VoteSwitchGroup1.layer.opacity = 0.0
+        
+        switchArray2 = [VoteSwitchGroup4, VoteSwitchGroup5, VoteSwitchGroup6]
         
         for img in imgsArray {
             img.layer.opacity = 0.0
             let frame1 = img.frame
         
-        
-
-
-//       let frame = imgsArray.frame
-        
-//        let frame1 = votePicGroup1.frame
-//        let frame2 = VoteLabelGroup1.frame
-//        let frame3 = VoteSwitchGroup1.frame
-        
-        UIView.animateWithDuration(1.5, animations: {
+            UIView.animateWithDuration(1.5, animations: {
   
-            //for img in self.imgsArray {
                 img.frame = CGRect(x: frame1.origin.x - 170, y: frame1.origin.y, width: frame1.size.width, height: frame1.size.height)
-            //}
-        
-//            self.votePicGroup1.frame = CGRect(x: frame1.origin.x - 345, y: frame1.origin.y, width: frame1.size.width, height: frame1.size.height)
-            
-//            self.VoteLabelGroup1.frame = CGRect(x: frame2.origin.x - 345, y: frame2.origin.y, width: frame2.size.width, height: frame2.size.height)
-            
-//            self.VoteSwitchGroup1.frame = CGRect(x: frame3.origin.x - 345, y: frame3.origin.y, width: frame3.size.width, height: frame3.size.height)
-            
-            
         })
-//    }
-        
-                for label in labelArray {
-                    label.layer.opacity = 0.0
-                    let frame2 = label.frame
+        for img in imgsArray2 {
+            img.layer.opacity = 1.0
+            let frame4 = img.frame
+ 
+            UIView.animateWithDuration(10.5, animations: {
                     
-                UIView.animateWithDuration(1.5, animations: {
-                      
-                    label.frame = CGRect(x: frame2.origin.x - 170, y: frame2.origin.y, width: frame2.size.width, height: frame2.size.height)
-                })
-            }
-                for switc in switchArray {
-                    switc.layer.opacity = 0.0
-                    let frame3 = switc.frame
-                    
-                UIView.animateWithDuration(1.5, animations: {
-                 
-                    switc.frame = CGRect(x: frame3.origin.x - 170, y: frame3.origin.y, width: frame3.size.width, height: frame3.size.height)
-                })
-            }
+                img.frame = CGRect(x: frame4.origin.x + 170, y: frame4.origin.y, width: frame4.size.width, height: frame4.size.height)
+            })
         }
+
+        for label in labelArray {
+            label.layer.opacity = 0.0
+            let frame2 = label.frame
+                    
+            UIView.animateWithDuration(1.5, animations: {
+                      
+                label.frame = CGRect(x: frame2.origin.x - 170, y: frame2.origin.y, width: frame2.size.width, height: frame2.size.height)
+            })
+        }
+        for label in labelArray2 {
+            label.layer.opacity = 10.0
+            let frame5 = label.frame
+                
+            UIView.animateWithDuration(10.5, animations: {
+                    
+                label.frame = CGRect(x: frame5.origin.x + 170, y: frame5.origin.y, width: frame5.size.width, height: frame5.size.height)
+            })
+        }
+        for switc in switchArray {
+            switc.layer.opacity = 0.0
+            let frame3 = switc.frame
+                    
+            UIView.animateWithDuration(1.5, animations: {
+                 
+                switc.frame = CGRect(x: frame3.origin.x - 170, y: frame3.origin.y, width: frame3.size.width, height: frame3.size.height)
+            })
+        }
+        for switc in switchArray2 {
+            switc.layer.opacity = 0.0
+            let frame6 = switc.frame
+                
+            UIView.animateWithDuration(10.5, animations: {
+                    
+                switc.frame = CGRect(x: frame6.origin.x + 170, y: frame6.origin.y, width: frame6.size.width, height: frame6.size.height)
+            })
+        }
+    }
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(VoteViewController.tapHandler))
         
@@ -99,15 +124,19 @@ class VoteViewController: UIViewController {
             img.addGestureRecognizer(tapGesture)
             img.userInteractionEnabled = true
         }
+        for img in imgsArray2 {
+            img.addGestureRecognizer(tapGesture)
+            img.userInteractionEnabled = true
+        }
         for label in labelArray {
             label.addGestureRecognizer(tapGesture)
             label.userInteractionEnabled = true
-//            label.layer.opacity = 0.0
+
         }
         for switc in switchArray {
             switc.addGestureRecognizer(tapGesture)
             switc.userInteractionEnabled = true
-//            switc.layer.opacity = 0.0
+
         }
         
         changeButton.addGestureRecognizer(tapGesture)
@@ -115,21 +144,7 @@ class VoteViewController: UIViewController {
     }
     
     
-//    func tapHandler() {
-    
-        // set first action to each outlet to turn
-//        UIView.animateWithDuration(1.5, animations:{
-//
-//                self.votePicGroup1.transform = CGAffineTransformMakeTranslation(365, 0)
-//                self.votePicGroup1.layer.opacity = 1.0
-//
-//                self.VoteLabelGroup1.transform = CGAffineTransformMakeTranslation(365, 0)
-//                self.VoteLabelGroup1.layer.opacity = 1.0
-//
-//                self.VoteSwitchGroup1.transform = CGAffineTransformMakeTranslation(365, 0)
-//                self.VoteSwitchGroup1.layer.opacity = 1.0
-//
-//        })
+
     
     func tapHandler() {
 
