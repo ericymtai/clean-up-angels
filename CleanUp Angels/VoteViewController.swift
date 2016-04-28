@@ -73,9 +73,9 @@ class VoteViewController: UIViewController {
             img.layer.opacity = 1.0
             let frame4 = img.frame
  
-            UIView.animateWithDuration(10.5, animations: {
+            UIView.animateWithDuration(1.5, animations: {
                     
-                img.frame = CGRect(x: frame4.origin.x + 170, y: frame4.origin.y, width: frame4.size.width, height: frame4.size.height)
+                img.frame = CGRect(x: frame4.origin.x + 10, y: frame4.origin.y, width: frame4.size.width, height: frame4.size.height)
             })
         }
 
@@ -89,12 +89,12 @@ class VoteViewController: UIViewController {
             })
         }
         for label in labelArray2 {
-            label.layer.opacity = 10.0
+            label.layer.opacity = 1.0
             let frame5 = label.frame
                 
-            UIView.animateWithDuration(10.5, animations: {
+            UIView.animateWithDuration(1.5, animations: {
                     
-                label.frame = CGRect(x: frame5.origin.x + 170, y: frame5.origin.y, width: frame5.size.width, height: frame5.size.height)
+                label.frame = CGRect(x: frame5.origin.x + 3, y: frame5.origin.y, width: frame5.size.width, height: frame5.size.height)
             })
         }
         for switc in switchArray {
@@ -107,12 +107,12 @@ class VoteViewController: UIViewController {
             })
         }
         for switc in switchArray2 {
-            switc.layer.opacity = 0.0
+            switc.layer.opacity = 1.0
             let frame6 = switc.frame
                 
-            UIView.animateWithDuration(10.5, animations: {
+            UIView.animateWithDuration(1.5, animations: {
                     
-                switc.frame = CGRect(x: frame6.origin.x + 170, y: frame6.origin.y, width: frame6.size.width, height: frame6.size.height)
+                switc.frame = CGRect(x: frame6.origin.x + 3, y: frame6.origin.y, width: frame6.size.width, height: frame6.size.height)
             })
         }
     }
@@ -154,13 +154,25 @@ class VoteViewController: UIViewController {
                 img.transform = CGAffineTransformMakeTranslation(200, 0)
                 img.layer.opacity = 1.0
             }
+            for img in self.imgsArray2 {
+                img.transform = CGAffineTransformMakeTranslation(200, 0)
+                img.layer.opacity = 0.0
+            }
             for label in self.labelArray {
                 label.transform = CGAffineTransformMakeTranslation(520, 0)
                 label.layer.opacity = 1.0
             }
+            for label in self.labelArray2 {
+                label.transform = CGAffineTransformMakeTranslation(520, 0)
+                label.layer.opacity = 0.0
+            }
             for switc in self.switchArray {
                 switc.transform = CGAffineTransformMakeTranslation(520, 0)
                 switc.layer.opacity = 1.0
+            }
+            for switc in self.switchArray2 {
+                switc.transform = CGAffineTransformMakeTranslation(520, 0)
+                switc.layer.opacity = 0.0
             }
         })
     }
